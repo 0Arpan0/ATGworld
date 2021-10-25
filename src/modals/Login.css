@@ -1,0 +1,144 @@
+#container {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    height: 523px;
+    width: 60%; 
+    background-color: #fff;
+    z-index: 10;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.container_1 {
+    width: 100%;
+    height: 100%;
+}
+
+#close {
+    position: absolute;
+    right: 18%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin-top: -50px;
+}
+form {
+    width: 100%;
+}
+#heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#heading-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: -20px; */
+    width: 100%;
+}
+#info {
+    display: flex;
+    width: 320px;
+    height: 46px;
+
+}
+#half {
+    height: 46px;
+    padding: 10px;
+    border: 1px solid rgba(217, 217, 219, 1);
+    background-color: rgba(247, 248, 250, 1);
+    width: 50%;
+  
+}
+
+#info-container {
+
+    width: 320px;
+}
+#full {
+    height: 46px;
+    padding:10px;
+    border: 1px solid rgba(217, 217, 219, 1);
+    background-color: rgba(247, 248, 250, 1);
+    width: 100%;
+}
+
+button {
+    width: 320px;
+    border: none;
+    height: 46px;
+    margin-top: 10px;
+}
+.login-img {
+    width: 307px;
+    height: 270px;
+}
+.sign-in {
+    border-radius: 20px;
+    background-color: rgba(47, 108, 229, 1);
+    color: #fff;
+}
+.facebook {
+    border: 0.6px solid rgba(217, 217, 219, 1);
+    background-color: transparent;
+    color: black;
+}
+
+.google {
+    border: 0.6px solid rgba(217, 217, 219, 1);
+    background-color: transparent;
+    color: black;
+}
+.f-icon {
+    height: 26px;
+    width: 50px;
+}
+.g-icon {
+    height: 26px;
+    width: 26px;
+}
+@media(max-width:800px) {
+    #alert, .login-img {
+        display: none;
+    }
+   
+    #container {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        height: 523px;
+        width: 320px; 
+        background-color: #fff;
+        z-index: 10;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    #close {
+        position: absolute;
+        right: 1%;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        margin-top: -50px;
+    }
+    #info-container {
+
+        width: 250px;
+    }
+    #desktop-view{ 
+        display: none;
+    }
+    
+button {
+    width: 250px;
+    border: none;
+    height: 46px;
+    margin-top: 10px;
+}
+}

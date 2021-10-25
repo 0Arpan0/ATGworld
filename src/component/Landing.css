@@ -1,0 +1,328 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bolder;
+}
+
+#navbar{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.logo {
+    width: 200px;
+    height: 45px;
+    margin-left: 20px;
+}
+.blue {
+    color: rgb(0, 119, 255);
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 400px;
+    height: 45px;
+    background-color: rgba(242, 242, 242, 1);
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.arrow-down {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+::placeholder { 
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bolder;
+}
+.text-info {
+    color: rgba(92, 92, 92, 1) !important;
+}
+.image-text {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bolder;
+    color: #fff;   
+}
+.image-text-container {
+    position: absolute;
+    margin-top: -170px;
+    left: 15%;
+}
+
+.main-img {
+    object-fit:cover; 
+  object-position: center; 
+  width: 100%;
+  max-height: 440px;
+  margin-bottom: 1rem;
+  margin-top: -10px;
+  filter: brightness(50%);
+}
+.nav {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.nav-links {
+    display: flex;
+}
+.nav-links-views {
+    display: flex;
+}
+#link {
+    display: flex;
+    justify-content: center;
+    width: 72%;
+    border-bottom: 1px solid #E0E0E0;
+    height: 85px;
+}
+a {
+    padding:5px; 
+    text-decoration: none;   
+    font-size: 16px;
+    color:rgba(138, 138, 138, 1);
+}
+a:hover {
+    color: rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+.nav-btn {
+    display: flex;
+}
+.btn-primary {
+    display: flex;
+   background-color:rgba(47, 108, 229, 1);
+   font-family: 'IBM Plex Sans', sans-serif;
+   font-weight: bolder;
+   border: none;
+   height: 36px;
+   width: 133px;
+}
+#secondary{
+    display: flex;
+   background-color:rgba(237, 238, 240, 1);
+   color: black;
+   font-family: 'IBM Plex Sans', sans-serif;
+   font-weight: bolder;
+   border: none;
+   height: 36px;
+   width: 133px;
+}
+#share {
+    display: flex;
+    background-color:rgba(237, 238, 240, 1);
+    color: black;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bolder;
+    border: none;
+    height: 36px;
+    width: 42px;
+}
+#post {
+    display: flex;
+    justify-content: space-between;
+    width: 72%;
+    /* border-bottom: 1px solid #E0E0E0; */
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.post-container {
+    border: 1px solid rgba(224, 224, 224, 1);
+    width: 650px;
+    height: 100%;
+    border-radius: 10px;
+}
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid cyan; */
+    width: 243px;
+    height: 50px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.location-footer {
+    font-size: 12px;
+    color: rgba(92, 92, 92, 1);
+}
+#info-icon {
+    width: 13px;
+    height: 13px;
+    color: rgba(92, 92, 92, 1);
+}
+.place {
+    border: none;
+    border-bottom: 1px solid grey;
+}
+.post-img {
+    object-fit:cover; 
+    object-position: center; 
+    width: 100%;
+    max-height: 220px; 
+    border-radius: 10px;
+}
+.post-heading{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    list-style: 23.4px;
+}
+.post-question {
+    margin-top: 5px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    line-height: 29.52px;
+}
+#sub-post-container {
+    padding:15px;
+}
+.post-brief {
+    font-size: 19px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: rgba(92, 92, 92, 1);
+}
+.profile {
+    object-fit:cover; 
+    object-position: center; 
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+.basic-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#additional-info {
+    width: 550px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.mobile-view {
+    display: none;
+}
+#filter {
+    display: none;
+}
+.join {
+    display: none;
+}
+#button-addon4 {
+    margin-top: -10px;
+}
+#search {
+    margin-top: 10px;
+}
+@media(max-width:800px) {
+    .image-text-container {
+        position: absolute;
+        margin-top: -100px;
+        left: 10%;
+    }
+    #navbar, .location, .nav-btn, #link {
+        display: none;
+    }
+    .post-container {
+        border: 1px solid rgba(224, 224, 224, 1);
+        width: 350px;
+        height: 100%;
+        border-radius: 10px;
+    }
+    #additional-info {
+        width: 550px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: center;
+    }
+    .post-question {
+        margin-top: 5px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: bolder;
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+    .post-brief {
+        font-size: 14px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: rgba(92, 92, 92, 1);
+    }
+    .profile {
+        height: 37px;
+        width: 37px;
+        border-radius: 50%;
+    }
+    .profile-name {
+        object-fit:cover; 
+        object-position: center; 
+        font-size: 13px;
+        line-height: 16.25px;
+    }
+    .join {display: flex;
+        position: absolute;
+        color: #fff;
+        border: #fff;
+        margin-top: -65%;
+        right: 5px;
+    }
+    .nav-links-views {
+        display: flex;
+        font-size: 12px;
+        line-height: 23.25px;
+    }
+    .material-icons.md-18 { font-size: 18px; }
+    .mobile-view {
+        display: block;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: bolder;
+        font-size: 24px;
+        color: rgba(33, 37, 41, 1);
+    }
+    .desktop-view {
+        display: none;
+    }
+    #post {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        /* border-bottom: 1px solid #E0E0E0; */
+        height: 100%;
+        /* border: 1px solid black; */
+    }
+    #filter {
+        display: flex;
+        background-color:rgba(237, 238, 240, 1);
+        color: black;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: bolder;
+        border: none;
+        height: 36px;
+        width: 133px;
+        justify-content: space-between;
+    }
+    #align {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+   
+    .nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
